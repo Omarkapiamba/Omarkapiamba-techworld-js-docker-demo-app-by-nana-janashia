@@ -3,17 +3,17 @@ pipeline {
 	stages {
 		stage("Build") {
 			steps {
-				echo 'Kod för att bygga här'
+				echo 'Automatiseringen fungerar'
 			}	
 		}
 		stage("Test") {
 			steps {
-				echo 'Kod för att testa här'
+				echo 'Automatiseringen fungerar 2'
 			}
 		}
 		stage("Deploy") {
 			steps {
-				echo 'Kod för att deploya här'
+				echo 'Automatiseringen fungerar 3'
 				echo ' Hej'
 			}
 		}
