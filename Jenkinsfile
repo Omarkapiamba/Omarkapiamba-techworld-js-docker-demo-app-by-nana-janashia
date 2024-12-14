@@ -8,7 +8,7 @@ pipeline {
 		}
 		stage("Test") {
 			steps {
-				sh 'Kod för att testa här'
+				echo 'Kod för att testa här'
 			}
 		}
 		stage("Deploy") {
