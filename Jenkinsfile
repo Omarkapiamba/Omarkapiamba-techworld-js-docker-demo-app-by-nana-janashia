@@ -6,7 +6,7 @@ pipeline {
 		choice(name: 'VERSION', choices: ['1.1.0', '1.2.0', '1.3.0'], description: '')
 		booleanparam(name: 'executeTests', defaultValue: true, description: '')
 	}
-	Environment {
+	environment {
 		// Alla variabler jag skapar här kommer vara tillgängliga i alla stages under.
 		NEW_VERSION = '1.3.0'
 		SERVER_CREDENTIALS = credentials('demo-app-git-credentials') //Måste ladda ner credentials binding plugin. fyll i credentials ID't inom paranteserna.
