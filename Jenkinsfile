@@ -1,8 +1,5 @@
 pipeline {
 	agent any
-	Tools {
-		//maven 'Maven' // 'Maven' finns i inställningar > Tools. Namnet på din Tool i detta fall Maven läger du i.
-	}
 	parameters {
 		// string(name: 'VERSION', defaultValue: '', description: 'version to deploy on prod')
 
@@ -41,15 +38,5 @@ pipeline {
 			}
 		}
 	}
-	post {
-		Always {
-			//Kod som körs ALLTID
-		}
-		sucess {			
-			//Kod som körs ENDAST om det lyckas
-		}	
-		failure {
-			//Kod som körs ENDAST om det misslyckas
-		}
 	}
 }
