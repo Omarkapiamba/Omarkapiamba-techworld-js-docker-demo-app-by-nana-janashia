@@ -1,20 +1,22 @@
 pipeline {
 	agent any
 	stages {
-		stage("Build") {
+		stage ("build") {
 			steps {
-				echo 'Automatiseringen fungerar'
-			}	
-		}
-		stage("Test") {
-			steps {
-				echo 'Automatiseringen fungerar 2'
+				echo 'building the application...'
+				
 			}
 		}
-		stage("Deploy") {
+		
+		stage ("test") {
 			steps {
-				echo 'Automatiseringen fungerar 3'
-				echo ' Hej'
+				echo 'testing the application..'
+			}
+		}
+		stage ("deploy") {
+			steps {
+				echo 'testing the application...'
+			
 			}
 		}
 	}
