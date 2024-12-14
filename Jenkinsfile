@@ -17,9 +17,7 @@ pipeline {
 					params.executeTests
 				}
 			}
-			steps {	
-				
-			}
+			
 		}
 		stage ("deploy") {
 			steps {
